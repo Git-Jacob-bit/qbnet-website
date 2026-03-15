@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Black circle background -->
+  <circle cx="50" cy="50" r="50" fill="black"/>
+
+  <!--
+    Modern geometric Q:
+    - Perfect circle ring (outer - inner = stroke weight)
+    - Short diagonal tail bottom-right, rounded cap
+    All proportions tuned for clean sans-serif feel (like Inter / Geist)
+  -->
+
+  <!-- Q ring: outer circle minus inner circle via clip/even-odd -->
+  <path
+    fill="white"
+    fill-rule="evenodd"
+    d="
+      M 50 18
+      A 32 32 0 1 1 49.9999 18
+      Z
+      M 50 28
+      A 22 22 0 1 0 50.0001 28
+      Z
+    "
+  />
+
+  <!-- Tail: thick diagonal stroke bottom-right, rounded linecap -->
+  <line
+    x1="63" y1="63"
+    x2="74" y2="76"
+    stroke="white"
+    stroke-width="7"
+    stroke-linecap="round"
+  />
+</svg>

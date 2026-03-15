@@ -83,7 +83,7 @@ export default function Navbar() {
           >
             <div className="flex flex-col px-4 py-6 gap-6 text-center">
               <Link href="/" onClick={closeMenu} className="text-lg font-medium text-neutral-300 hover:text-white">Start</Link>
-              <Link href="/sieć-domowa" onClick={closeMenu} className="text-lg font-medium text-neutral-300 hover:text-white">Sieć domowa</Link>
+              <Link href="/siec-domowa" onClick={closeMenu} className="text-lg font-medium text-neutral-300 hover:text-white">Sieć domowa</Link>
               <Link href="/smart-home" className="text-sm font-medium text-neutral-300 hover:text-white transition-colors">Smart Home</Link>
               <Link href="/strony-www" className="text-sm font-medium text-neutral-300 hover:text-white transition-colors">Strony internetowe</Link>
               <Link href="/#kontakt" onClick={closeMenu} className="text-lg font-medium text-neutral-300 hover:text-white">Kontakt</Link>

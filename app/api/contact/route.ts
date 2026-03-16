@@ -17,11 +17,11 @@ export async function POST(request: Request) {
     const data = await resend.emails.send({
       // ZANIM ZWERYFIKUJESZ DOMENĘ: użyj 'onboarding@resend.dev'
       // PO WERYFIKACJI DOMENY: zmień na np. 'Kontakt <kontakt@qb-net.pl>'
-      from: 'onboarding@resend.dev', 
+      from: 'zlecenie@qb-net.pl', 
       
       // Tutaj wpisz SWÓJ e-mail, na który chcesz OTRZYMYWAĆ zapytania od klientów
       // (Podczas testów z 'onboarding@resend.dev' musi to być mail, na który założyłeś konto Resend!)
-      to: 'jakub.czechowski12321@gmail.com', 
+      to: 'jakub_czechowski@qb-net.pl', 
       
       subject: `Nowa wiadomość ze strony od: ${name}`,
       // Możesz też użyć react-email do pięknych szablonów HTML, 

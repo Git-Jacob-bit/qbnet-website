@@ -14,13 +14,17 @@ const modernFont = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://qb-net.pl"), // <-- Dodano: Baza dla wszystkich linków
   title: "qb-net | Niezawodne Sieci Domowe i Smart Home Wrocław",
   description: "Koniec z martwymi strefami Wi-Fi. Projektowanie, montaż i konfiguracja sieci domowych oraz systemów Smart Home we Wrocławiu i okolicach.",
   keywords: ["sieci domowe", "smart home", "wrocław", "konfiguracja routera", "system mesh", "inteligentny dom", "montaż sieci"],
+  alternates: {
+    canonical: "/", // <-- Dodano: Wskazuje Google, że oryginalna strona to ta bazowa
+  },
   openGraph: {
     title: "qb-net | Profesjonalne Sieci Domowe",
     description: "Twój dom zasługuje na idealne Wi-Fi bez martwych stref. Sprawdź, jak możemy pomóc.",
-    url: "https://qb-net.pl", // Kiedyś podmienisz na swoją docelową domenę
+    url: "https://qb-net.pl", // Komentarz usunięty – jesteś już u siebie!
     siteName: "qb-net",
     locale: "pl_PL",
     type: "website",
